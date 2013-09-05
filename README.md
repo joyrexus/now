@@ -1,33 +1,35 @@
-# now
+# Now
 
 Show current weather conditions via [forecast.io](http://forecast.io).
 
 
 ## Setup
 
-Download or clone and use `npm install -g` to install dependencies and the
-`now` command-line utility.
+1.  Download or clone.
 
-Then specify your [forecast.io api key](https://developer.forecast.io/) and location (lat/lon) coordinates in `config.json` and you should be good to go.
+2. Specify your [forecast.io api key](https://developer.forecast.io/) and location coordinates ("LAT,LON") in `config.json`.
+
+3. Use `npm -g install` to install dependencies and the
+`now` command-line utility.
 
 
 ## Usage
 
     > now 
-    time: 1378231463,
-    summary: 'Clear',
-    icon: 'clear-day',
-    precipIntensity: 0,
-    precipProbability: 0,
-    temperature: 82.3,
-    apparentTemperature: 84.07,
-    dewPoint: 64.92,
-    windSpeed: 9.07,
-    windBearing: 357,
-    cloudCover: 0.19,
-    humidity: 0.56,
-    pressure: 1005.71,
-    visibility: 10,
+    time: 1378231463
+    summary: 'Clear'
+    icon: 'clear-day'
+    precipIntensity: 0
+    precipProbability: 0
+    temperature: 82.3
+    apparentTemperature: 84.07
+    dewPoint: 64.92
+    windSpeed: 9.07
+    windBearing: 357
+    cloudCover: 0.19
+    humidity: 0.56
+    pressure: 1005.71
+    visibility: 10
     ozone: 291.68
 
     > now temperature humidity
