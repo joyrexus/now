@@ -1,0 +1,6 @@
+{
+    "key": "1b21e642bf3edf6d313f3e7ef95e3d15",
+    "coords": "35.2102,-85.9364",
+    "location": "Sewanee, TN",
+    "defaults": ["summary", "temperature", "humidity"]
+}

@@ -1,0 +1,11 @@
+{
+    "name" : "now",
+    "version" : "0.1.0",
+    "description": "Show current weather conditions via forecast.io",
+    "keywords" : ["weather", "forecast"],
+    "main" : "./index.coffee",
+    "bin": "./bin/now",
+    "dependencies" : {
+        "request" : "~2.27.0"
+    }
+}
