@@ -10,7 +10,10 @@ key = config.key          # your forecast.io api key
 loc = config.coords       # your preferred location (lat/lon)
 url = "https://api.forecast.io/forecast/#{key}/#{loc}"
 
-exports.now = (args) ->
+exports.data = (callback) -> 
+  req url, (err, res, body) -> callback JSON.parse(body)
+
+exports.now = (args=[]) ->
   '''
   Show current weather conditions via forecast.io.
 

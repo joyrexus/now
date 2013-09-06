@@ -1,6 +1,6 @@
 # Now
 
-Show current weather conditions via [forecast.io](http://forecast.io).
+Get current weather conditions via [forecast.io](http://forecast.io).
 
 
 ## Setup
@@ -14,6 +14,25 @@ Show current weather conditions via [forecast.io](http://forecast.io).
 
 
 ## Usage
+
+```coffeescript
+{data} = require 'now'
+
+# callback for handling the returned JSON
+summary = (d) ->  
+  console.log "Currently #{d.currently.summary}"
+  console.log d.daily.summary
+
+data summary
+```
+
+This should print out something like ...
+
+    Currently Clear
+    Light rain next week; temperatures rising to 89° on Tuesday.
+
+
+### CLI
 
     > now 
     time: 1378231463
