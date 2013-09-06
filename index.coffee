@@ -1,5 +1,5 @@
 '''
-Show current weather conditions via forecast.io.
+Get current weather conditions via forecast.io.
     
 '''
 config = require 'config.json'
