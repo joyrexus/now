@@ -4,7 +4,7 @@
     "description": "Get current weather conditions via forecast.io",
     "keywords" : ["weather", "forecast", "forecast.io"],
     "main" : "./lib/index.js",
-    "bin": "./bin/now",
+    "bin": {"now": "./bin/now"},
     "dependencies" : {
         "request" : "~2.27.0",
         "optimist": ">= 0.4.0"

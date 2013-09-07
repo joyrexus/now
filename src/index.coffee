@@ -6,7 +6,7 @@ config = require 'config.json'
 params = config.defaults
 
 if not config.key
-  console.log "Please specify your forecast.io api key in `config.json`" 
+  console.log "Please specify your forecast.io api key in `#{__dirname}/../config.json`" 
   process.exit 1
 
 req = require 'request'
