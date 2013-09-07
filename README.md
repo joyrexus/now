@@ -2,8 +2,6 @@
 
 Get current weather conditions via [forecast.io](http://forecast.io).
 
----
-
 ![Tufte](cloud.gif)
 
 
