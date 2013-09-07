@@ -8,4 +8,8 @@
     "dependencies" : {
         "request" : "~2.27.0"
     }
+    "repository": {
+        "type": "git",
+        "url": "joyrexus/now"
+    },
 }

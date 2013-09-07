@@ -1,8 +1,10 @@
 # Now
 
-![Tufte](cloud.gif)
-
 Get current weather conditions via [forecast.io](http://forecast.io).
+
+---
+
+![Tufte](cloud.gif)
 
 
 ## Setup
