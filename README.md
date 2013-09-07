@@ -12,14 +12,18 @@ Get current weather conditions via [forecast.io](http://forecast.io).
     `npm install now-forecast`
 
 2. Specify your [forecast.io api key](https://developer.forecast.io/) and location coordinates in `config.json`.
+   
+   You'll find the config file in `$(npm -g root)/now-forecast`.
 
-    cat $(npm -g root)/now-forecast/config.json
-    {
-        "key": "YOUR-FORECAST.IO-API-KEY",
-        "coords": "35.2102,-85.9364",
-        "location": "Sewanee, TN",
-        "defaults": ["summary", "temperature", "humidity"]
-    }
+```
+> cat $(npm -g root)/now-forecast/config.json
+{
+    "key": "YOUR-FORECAST.IO-API-KEY",
+    "coords": "35.2102,-85.9364",
+    "location": "Sewanee, TN",
+    "defaults": ["summary", "temperature", "humidity"]
+}
+```
 
 ... or ...
 
