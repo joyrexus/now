@@ -7,12 +7,15 @@ Get current weather conditions via [forecast.io](http://forecast.io).
 
 ## Setup
 
+`npm install now-forecast`
+
+... or ...
+
 1.  Download or clone.
 
 2. Specify your [forecast.io api key](https://developer.forecast.io/) and location coordinates in `config.json`.
 
-3. Use `npm -g install` to install dependencies and the
-`now` command-line utility.
+3. Use `npm -g install` to install dependencies and the `now` command-line utility.
 
 
 ## Usage
