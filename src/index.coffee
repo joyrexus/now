@@ -5,6 +5,8 @@ Get current weather conditions via forecast.io.
 config = require 'config.json'
 params = config.defaults
 
+console.log "Please specify your forecast.io api key in `config.json`" if not config.key
+
 req = require 'request'
 key = config.key          # your forecast.io api key
 loc = config.coords       # your preferred location (lat/lon)

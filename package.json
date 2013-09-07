@@ -1,15 +1,20 @@
 {
     "name" : "now",
     "version" : "0.1.0",
-    "description": "Show current weather conditions via forecast.io",
-    "keywords" : ["weather", "forecast"],
-    "main" : "./index.coffee",
+    "description": "Get current weather conditions via forecast.io",
+    "keywords" : ["weather", "forecast", "forecast.io"],
+    "main" : "./lib/index.js",
     "bin": "./bin/now",
     "dependencies" : {
-        "request" : "~2.27.0"
-    }
+        "request" : "~2.27.0",
+        "optimist": ">= 0.4.0"
+    },
     "repository": {
         "type": "git",
         "url": "joyrexus/now"
     },
+    "author": "J. Voigt",
+    "license": "MIT"
 }
+
+

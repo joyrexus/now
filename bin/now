@@ -1,6 +1,6 @@
 #!/usr/bin/env coffee 
 
-{now} = require '../index'
+{now} = require '../lib/index'
 argv = require('optimist').argv
 
 now argv._
