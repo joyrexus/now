@@ -1,5 +1,5 @@
 {
-    "name" : "now",
+    "name" : "now-forecast",
     "version" : "0.1.0",
     "description": "Get current weather conditions via forecast.io",
     "keywords" : ["weather", "forecast", "forecast.io"],
