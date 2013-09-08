@@ -39,18 +39,46 @@ Get current weather conditions via [forecast.io](http://forecast.io).
 ```coffeescript
 {forecast} = require 'now'
 
-# callback for handling the returned JSON
-summary = (d) ->  
+# callback for handling the returned forecast data
+today = (d) ->                
   console.log "Currently #{d.currently.summary}"
   console.log d.daily.summary
 
-forecast summary
+forecast today
 ```
 
-This should print out something like ...
+This should print something like ...
 
     Currently Clear
-    Light rain next week; temperatures rising to 89° on Tuesday.
+    Light rain tomorrow through Wednesday; temperatures peaking at 89° on Thursday.
+
+
+As you can see, the `forecast` method takes a callback for handling the returned forecast data.
+
+Here's another example that'll print a summary forecast for each day of the week:
+
+```coffeescript
+days = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']
+
+dayName = (day) -> 
+  date = new Date(day.time * 1000)
+  days[date.getDay()]
+
+week = (d) -> console.log dayName(day), day.summary for day in d.daily.data
+
+forecast week
+```
+
+This should print something like ...
+
+    SUN Partly cloudy starting in the afternoon, continuing until evening.
+    MON Light rain until evening.
+    TUE Light rain until evening.
+    WED Light rain until evening.
+    THU Clear throughout the day.
+    FRI Partly cloudy in the evening.
+    SAT Partly cloudy throughout the day.
+    SUN Partly cloudy until evening.
 
 
 ### CLI
