@@ -37,14 +37,14 @@ Get current weather conditions via [forecast.io](http://forecast.io).
 ## Usage
 
 ```coffeescript
-{data} = require 'now'
+{forecast} = require 'now'
 
 # callback for handling the returned JSON
 summary = (d) ->  
   console.log "Currently #{d.currently.summary}"
   console.log d.daily.summary
 
-data summary
+forecast summary
 ```
 
 This should print out something like ...

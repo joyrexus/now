@@ -14,7 +14,7 @@ key = config.key          # your forecast.io api key
 loc = config.coords       # your preferred location (lat/lon)
 url = "https://api.forecast.io/forecast/#{key}/#{loc}"
 
-exports.data = (callback) -> 
+exports.forecast = (callback) -> 
   req url, (err, res, body) -> callback JSON.parse(body)
 
 exports.now = (args=[]) ->
